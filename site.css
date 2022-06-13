@@ -3,7 +3,7 @@
 :root {
   --primary-color: #040404;
   --secondary-color: #f8f8f8;
-  --main-font: "LEMON MILK", sans-serif;
+  --main-font: "LEMON MILK", sans-serif !important;
   --body-font: "Lato", sans-serif;
 }
 
@@ -17,6 +17,9 @@ nav {
   z-index: 100;
   height: 150px;
   opacity: 0.92;
+}
+nav .container {
+  margin: 0;
 }
 nav a:hover {
   font-size: 30px;
@@ -264,3 +267,12 @@ footer a:hover {
   font-size: 36px;
   text-decoration: none;
 }
+
+/*! RESPONSIVE !*/
+@media (max-width: 1172px) {
+  body {
+    font-size: 10px !important;
+  }
+
+}
+/*? TITLE SECTION ?*/
