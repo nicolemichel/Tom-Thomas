@@ -309,8 +309,7 @@ footer a:hover {
     width: 150px;
   }
 
-  /*? SHOWS SECTION ?*/
-  #shows-section .btn-primary-outline {
+  .btn-primary-outline {
     padding: 10px 20px;
   }
 }
@@ -327,6 +326,9 @@ footer a:hover {
     margin-top: 5%;
     width: 100%;
     padding: 0;
+  }
+  #pre-save a {
+    left: 51% !important;
   }
 
   header {
@@ -392,8 +394,42 @@ footer a:hover {
     font-size: 20px;
   }
 
-  .btn {
+  h1 {
+    font-size: 24px;
+  }
+
+  .btn-primary-outline {
     font-size: 15px;
+  }
+
+  .title-image {
+    height: 150px;
+  }
+
+  /*? MAIN TITLE ?*/
+  #pre-save a {
+    left: 54% !important;
+  }
+
+  /*? ABOUT SECTION ?*/
+  #about-title-image {
+    object-position: 0 -115px;
+  }
+  /*? MUSIC SECTION ?*/
+  #music-title-image {
+    object-position: 0 -250px;
+  }
+  /*? STREAMS SECTION ?*/
+  #streams-title-image {
+    object-position: 0 -100px;
+  }
+  /*? SHOP SECTION ?*/
+  #shop-title-image {
+    object-position: 0 -295px;
+  }
+  /*? CONTACT   SECTION ?*/
+  #contact-title-image {
+    object-position: 0 -280px;
   }
 }
 
@@ -408,9 +444,26 @@ footer a:hover {
     font-size: 15px;
     font-weight: 300;
   }
+
+  /*? MAIN TITLE ?*/
+  #pre-save a {
+    left: 53% !important;
+  }
+
+  /*? ABOUT SECTION ?*/
   .about-images {
     width: 80%;
     height: 80%;
+  }
+
+  /*? MUSIC SECTION ?*/
+  .album {
+    margin-left: 90%;
+    width: 150%;
+  }
+
+  .link-logo {
+    padding-right: 5%;
   }
 }
 
