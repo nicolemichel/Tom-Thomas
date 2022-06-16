@@ -14,7 +14,7 @@
         url('LemonMilkbold.woff2') format('woff2'),
         url('LemonMilkbold.woff') format('woff'),
         url('LemonMilkbold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800;
     font-style: normal;
 }
 
