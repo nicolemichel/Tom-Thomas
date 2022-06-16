@@ -7,26 +7,6 @@
   --body-font: "Lato", sans-serif;
 }
 
-@font-face {
-    font-family: 'Lemon/Milk';
-    src: url('/LemonMilkBold/LemonMilk.eot');
-    src: url('/LemonMilkBold/LemonMilkbold.eot?#iefix') format('embedded-opentype'),
-        url('/LemonMilkBold/LemonMilkbold.woff2') format('woff2'),
-        url('/LemonMilkBold/LemonMilkbold.woff') format('woff'),
-        url('/LemonMilkBold/LemonMilkbold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'lemonmilkregular';
-    src: url('/LemonMilk/lemonmilk-webfont.woff2') format('woff2'),
-         url('/LemonMilk/lemonmilk-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 nav {
   background: var(--primary-color);
   font-size: 35px;
@@ -584,7 +564,7 @@ footer a:hover {
 
   /*? SHOWS SECTION ?*/
   #shows-section .btn-primary-outline {
-    padding: 10px 10px !important;
+    padding: 10px !important;
   }
 }
 
@@ -646,16 +626,86 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  .title {
+    top: 60%;
+  }
+  
   #pre-save a {
     left: 51% !important;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  p {
-    font-size: 14px;
+  .nav-link {
+    font-size: 10px !important;
   }
+  p {
+    font-size: 12px;
+  }
+
+  .mini-highlighted {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .btn-primary-outline {
+    font-size: 12px;
+  }
+
+  .title-image {
+    height: 100px;
+  }
+
+  #pre-save {
+    margin-top: 5%;
+  }
+
   #pre-save a {
-    left: 50% !important;
+    left: 49% !important;
+  }
+
+  /*? CONTACT  SECTION ?*/
+  #contact-title-image {
+    object-position: 0 -150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 13px;
+  }
+
+  #pre-save a {
+    left: 48% !important;
+  }
+
+  /*? SHOWS SECTION ?*/
+  #shows-section .mini-highlighted {
+    background: none;
+    color: var(--secondary-color);
+  }
+  #shows-section h3 {
+    font-size: 12px;
+  }
+  #shows-section .btn-primary-outline {
+    padding: 5px !important;
+  }
+
+  /*? MUSIC SECTION ?*/
+  #music-title-image {
+    object-position: 0 -145px;
+  }
+
+  /*? STREAMS SECTION ?*/
+  #streams-title-image {
+    object-position: 0 -60px;
+  }
+
+  /*? CONTACT SECTION ?*/
+  #contact-title-image {
+    object-position: 0 -120px;
   }
 }
