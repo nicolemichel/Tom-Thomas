@@ -9,14 +9,13 @@
 
 @font-face {
     font-family: 'Lemon/Milk';
-    src: url('LemonMilk.eot');
-    src: url('LemonMilk.eot?#iefix') format('embedded-opentype'),
-        url('LemonMilk.woff2') format('woff2'),
-        url('LemonMilk.woff') format('woff'),
-        url('LemonMilk.ttf') format('truetype');
-    font-weight: normal;
+    src: url('LemonMilkbold.eot');
+    src: url('LemonMilkbold.eot?#iefix') format('embedded-opentype'),
+        url('LemonMilkbold.woff2') format('woff2'),
+        url('LemonMilkbold.woff') format('woff'),
+        url('LemonMilkbold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 
 
