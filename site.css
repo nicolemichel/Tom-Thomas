@@ -9,12 +9,20 @@
 
 @font-face {
     font-family: 'Lemon/Milk';
-    src: url('LemonMilkbold.eot');
-    src: url('LemonMilkbold.eot?#iefix') format('embedded-opentype'),
-        url('LemonMilkbold.woff2') format('woff2'),
-        url('LemonMilkbold.woff') format('woff'),
-        url('LemonMilkbold.ttf') format('truetype');
-    font-weight: 100, 200, 300, 400, 500, 600, 700, 800;
+    src: url('/LemonMilkBold/LemonMilk.eot');
+    src: url('/LemonMilkBold/LemonMilkbold.eot?#iefix') format('embedded-opentype'),
+        url('/LemonMilkBold/LemonMilkbold.woff2') format('woff2'),
+        url('/LemonMilkBold/LemonMilkbold.woff') format('woff'),
+        url('/LemonMilkBold/LemonMilkbold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('/LemonMilk/lemonmilk-webfont.woff2') format('woff2'),
+         url('/LemonMilk/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
