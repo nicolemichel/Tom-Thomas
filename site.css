@@ -68,7 +68,7 @@ h4 {
 a {
   font-weight: 100;
   font-size: 30px;
-  text-decoration: none;
+  text-decoration: 2px underline var(--secondary-color);
   color: var(--secondary-color);
   transition: all 100ms ease-in-out;
 }
@@ -203,10 +203,6 @@ p {
   margin: 0 !important;
 }
 
-#music-section a {
-  text-decoration: 2px underline var(--secondary-color);
-}
-
 /*? STREAMS SECTION ?*/
 #streams-title-image {
   object-position: 0 -200px;
@@ -230,6 +226,10 @@ p {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.highlight-title {
+  text-decoration: 2px underline var(--secondary-color);
 }
 
 .mini-logo {
@@ -419,18 +419,22 @@ footer a:hover {
   #about-title-image {
     object-position: 0 -115px;
   }
+
   /*? MUSIC SECTION ?*/
   #music-title-image {
     object-position: 0 -250px;
   }
+
   /*? STREAMS SECTION ?*/
   #streams-title-image {
     object-position: 0 -100px;
   }
+
   /*? SHOP SECTION ?*/
   #shop-title-image {
     object-position: 0 -295px;
   }
+
   /*? CONTACT   SECTION ?*/
   #contact-title-image {
     object-position: 0 -280px;
@@ -477,10 +481,11 @@ footer a:hover {
     padding-right: 5%;
   }
 
-   /*? SHOP SECTION ?*/
+  /*? SHOP SECTION ?*/
   #shop-title-image {
     object-position: 0 -200px;
   }
+
   /*? CONTACT   SECTION ?*/
   #contact-title-image {
     object-position: 0 -190px;
@@ -506,18 +511,24 @@ footer a:hover {
   }
 }
 
-
 @media only screen and (max-width: 600px) {
+  nav {
+    height: 50px;
+  }
+
   #logo-img {
     display: none;
   }
-  
+
+  footer {
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 590px) {
   #pre-save a {
     left: 51% !important;
-  } 
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -529,5 +540,44 @@ footer a:hover {
   }
   .highlight-title {
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  #pre-save a {
+    left: 50% !important;
+  }
+
+  .mini-highlighted {
+    font-size: 15px;
+  }
+
+  /*? ABOUT SECTION ?*/
+  #about-title-image {
+    object-position: 0 -70px;
+  }
+
+  /*? MUSIC SECTION ?*/
+  #music-title-image {
+    object-position: 0 -210px;
+  }
+
+  /*? STREAMS SECTION ?*/
+  #streams-title-image {
+    object-position: 0 -80px;
+  }
+
+  /*? SHOP SECTION ?*/
+  #shop-title-image {
+    object-position: 0 -160px;
+  }
+
+  /*? CONTACT  SECTION ?*/
+  #contact-title-image {
+    object-position: 0 -180px;
   }
 }
