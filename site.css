@@ -7,6 +7,19 @@
   --body-font: "Lato", sans-serif;
 }
 
+@font-face {
+    font-family: 'Lemon/Milk';
+    src: url('LemonMilk.eot');
+    src: url('LemonMilk.eot?#iefix') format('embedded-opentype'),
+        url('LemonMilk.woff2') format('woff2'),
+        url('LemonMilk.woff') format('woff'),
+        url('LemonMilk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 nav {
   background: var(--primary-color);
   font-size: 35px;
@@ -282,7 +295,6 @@ footer a:hover {
 /*! RESPONSIVE !*/
 @media only screen and (max-width: 1199px) {
   body {
-    font-size: 10px !important;
     text-align: center;
   }
 
@@ -321,64 +333,27 @@ footer a:hover {
 @media only screen and (max-width: 991px) {
   nav {
     width: 100%;
+    height: 100px;
     justify-content: center;
   }
 
-  /*? MAIN TITLE SECTION ?*/
-  #pre-save {
-    text-align: center;
-    margin-top: 5%;
-    width: 100%;
-    padding: 0;
-  }
-  #pre-save a {
-    left: 51% !important;
-  }
-
-  header {
-    padding: 15% 0 5% 0;
-  }
-  header a {
-    margin-left: -11%;
-  }
-
-  .circle-visuals {
-    display: none;
-  }
-
-  /*? MUSIC SECTION ?*/
-  .album {
-    width: 150%;
-  }
-
-  /*? STREAMS SECTION ?*/
-  #twitch-schedule {
-    text-align: center;
-    width: 100%;
-  }
-
-  .highlight-title {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  nav {
-    height: 100px;
-  }
   .nav-link {
     font-size: 20px !important;
   }
-  #logo-img {
-    width: 100px;
-  }
-}
 
-@media only screen and (max-width: 800px) {
+  #logo-img {
+    width: 180px;
+  }
+
   body {
     font-size: 24px;
   }
+
   p {
+    font-size: 20px;
+  }
+
+  a {
     font-size: 20px;
   }
 
@@ -406,6 +381,91 @@ footer a:hover {
     font-size: 15px;
   }
 
+  /*? MAIN TITLE SECTION ?*/
+  #pre-save {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  /*? MAIN TITLE ?*/
+  #pre-save a {
+    left: 55% !important;
+    margin-top: 3% !important;
+  }
+
+  header {
+    padding: 15% 0 5% 0;
+  }
+  header a {
+    margin-left: -11%;
+  }
+
+  .circle-visuals {
+    display: none;
+  }
+
+  /*? ABOUT SECTION ?*/
+  #about-title-image {
+    object-position: 0 -75px;
+  }
+  .album {
+    width: 150%;
+  }
+
+  .about-images {
+    width: 80%;
+    height: 80%;
+  }
+
+  /*? MUSIC SECTION ?*/
+  #music-title-image {
+    object-position: 0 -185px;
+  }
+
+  /*? STREAMS SECTION ?*/
+  #streams-title-image {
+    object-position: 0 -70px;
+  }
+  #livestreams-title {
+    display: none;
+  }
+  #twitch-schedule {
+    text-align: center;
+    width: 100%;
+  }
+
+  .highlight-title {
+    font-size: 24px;
+  }
+
+  /*? SHOP SECTION ?*/
+  #shop-title-image {
+    object-position: 0 -170px;
+  }
+
+  /*? CONTACT SECTION ?*/
+  #contact-title-image {
+    object-position: 0 -220px;
+  }
+
+  footer {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #logo-img {
+    width: 150px;
+  }
+  #pre-save {
+    margin-top: 3%;
+  }
+  #pre-save a {
+    left: 54% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .title-image {
     height: 150px;
   }
@@ -442,33 +502,48 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  nav {
+    height: 50px;
+  }
   .nav-link {
     font-size: 15px !important;
-  }
-  #logo-img {
-    width: 80px;
   }
   .highlight-title {
     font-size: 15px;
     font-weight: 300;
   }
 
-  a {
-    font-size: 20px;
+  #logo-img {
+    display: none;
   }
 
-  /*? MAIN TITLE ?*/
-  #pre-save a {
-    left: 53% !important;
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  .mini-highlighted {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .btn-primary-outline {
+    font-size: 12px;
   }
 
   /*? ABOUT SECTION ?*/
   #about-title-image {
     object-position: 0 -90px;
-  }
-  .about-images {
-    width: 80%;
-    height: 80%;
   }
 
   /*? MUSIC SECTION ?*/
@@ -486,9 +561,12 @@ footer a:hover {
     object-position: 0 -200px;
   }
 
-  /*? CONTACT   SECTION ?*/
+  /*? CONTACT SECTION ?*/
   #contact-title-image {
     object-position: 0 -190px;
+  }
+  footer {
+    height: 50px;
   }
 }
 
@@ -496,38 +574,16 @@ footer a:hover {
   h3 {
     font-size: 15px;
   }
-  #shows-section a {
-    font-size: 15px;
+
+  /*? SHOWS SECTION ?*/
+  #shows-section .btn-primary-outline {
+    padding: 10px 10px !important;
   }
 }
 
 @media only screen and (max-width: 630px) {
-  #logo-img {
-    width: 65px;
-  }
-
   #pre-save a {
-    left: 52% !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  nav {
-    height: 50px;
-  }
-
-  #logo-img {
-    display: none;
-  }
-
-  footer {
-    height: 50px;
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  #pre-save a {
-    left: 51% !important;
+    left: 53% !important;
   }
 }
 
@@ -549,7 +605,7 @@ footer a:hover {
   }
 
   #pre-save a {
-    left: 50% !important;
+    left: 52% !important;
   }
 
   .mini-highlighted {
@@ -579,5 +635,20 @@ footer a:hover {
   /*? CONTACT  SECTION ?*/
   #contact-title-image {
     object-position: 0 -180px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #pre-save a {
+    left: 51% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  p {
+    font-size: 14px;
+  }
+  #pre-save a {
+    left: 50% !important;
   }
 }
