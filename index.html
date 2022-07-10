@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!--fonts-->
-    <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/LemonMilk" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -21,7 +21,7 @@
     <!--style-->
     <link rel="stylesheet" href="/site.css" />
     <style>
-      @import url("http://fonts.cdnfonts.com/css/lemonmilk");
+      @import url("http://fonts.cdnfonts.com/css/LemonMilk");
     </style>
     <!--font awesome-->
     <script
@@ -29,39 +29,40 @@
       crossorigin="anonymous"
     ></script>
     <!--icon-->
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="/images/logo.png" />
     <title>Tom Thomas</title>
+    <!--smooth scroll-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <nav
     class="navbar navbar-expand navbar-dark secondary-color pt-3 align-items-center justify-content-center"
   >
-        <ul class="navbar-nav mr-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#about-section">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#shows-section">shows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#music-section">music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#main-title"
-              ><img src="/images/logo.png" alt="logo" id="logo-img"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#streams-section">streams</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#shop-section">shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-section">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul class="navbar-nav mr-auto align-items-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-section">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#shows-section">SHOWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#music-section">MUSIC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#main-title"
+          ><img src="/images/logo.png" alt="logo" id="logo-img" class="lazy"
+        /></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#streams-section">STREAMS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#shop-section">SHOP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-section">CONTACT</a>
+      </li>
+    </ul>
   </nav>
   <!-- main title -->
   <header id="main-title">
@@ -69,15 +70,15 @@
       <div class="row align-items-center">
         <div id="pre-save" class="col-7">
           <h1>
-            <span class="highlighted">New</span>
+            <span class="highlighted">ONLY</span>
             <br />
-            <span class="highlighted">Single</span>
           </h1>
-          <h4>OUT JUNE 18, 2022</h4>
+          <h4>JULY 1, 2022</h4>
           <a
-            href="#contact-section"
+            href="https://open.spotify.com/album/6VBmxtDgST7TflhxhTcgL6?highlight=spotify:track:7seFmmSNpMG3FSWE0XwWbJ"
+            target="_blank"
             class="btn btn-primary-outline position-absolute mt-3"
-            >pre-save</a
+            >LISTEN</a
           >
         </div>
         <div class="col-5 position-relative d-none d-lg-block circle-visuals">
@@ -88,7 +89,7 @@
           <img
             src="/images/pearls.png"
             alt="Tom Thomas looking fancy in pearls"
-            class="img-fluid position-absolute pearls"
+            class="img-fluid position-absolute pearls lazy"
           />
         </div>
       </div>
@@ -100,24 +101,27 @@
       <div id="about-section" class="container">
         <div class="row mt-5 section-start">
           <h1 class="title" id="about-title">
-            <span>About Tom Thomas</span>
+            <span>ABOUT TOM THOMAS</span>
           </h1>
           <img
             src="/images/sunglasses.png"
             alt="Tom Thomas in sunglasses with red and blue lights hitting him"
             id="about-title-image"
-            class="title-image mt-5"
+            class="title-image mt-5 lazy"
           />
         </div>
         <div class="row mt-5 text-center justify-content-center">
           <p class="col-12">
             Music is special isn’t it? There’s nothing else to the best of my
             knowledge that can take you to a whole other place emotionally,
-            mentally, and spiritually like the right songs. I was exposed to
-            everything from Bob Dylan to Naughty By Nature at a very young age
-            and being introduced to such a wide variety of artists early on
-            definitely sparked something in me, with my earliest songs tracking
-            back to the age of 4 and earliest demos to the age of 8.
+            mentally, and spiritually like the right songs.
+            <br />
+            <br />
+            I was exposed to everything from Bob Dylan to Naughty By Nature at a
+            very young age and being introduced to such a wide variety of
+            artists early on definitely sparked something in me, with my
+            earliest songs tracking back to the age of 4 and earliest demos to
+            the age of 8.
           </p>
         </div>
         <!--second paragraph-->
@@ -126,17 +130,19 @@
             <img
               src="/images/colours.png"
               alt="Tom Thomas in colourful lighting."
-              class="about-images"
+              class="about-images lazy"
             />
           </div>
           <div class="col-xl-6 mt-5 text-end">
             <p>
               While the songs may not have been the deepest (a lot of them were
-              about Pokemon), they carried a lot of meaning to me. Regardless of
-              what kind of tune I was churning out, it always came together very
-              quickly. There was never a lot of trouble with trying to find the
-              right words to say (I wish this was the case outside of music also
-              but hey).
+              about Pokemon), they carried a lot of meaning to me.
+              <br />
+              <br />
+              Regardless of what kind of tune I was churning out, it always came
+              together very quickly. There was never a lot of trouble with
+              trying to find the right words to say (I wish this was the case
+              outside of music also but hey).
             </p>
           </div>
         </div>
@@ -156,22 +162,26 @@
             <img
               src="/images/singing.png"
               alt="Tom Thomas singing on a patio at an event."
-              class="about-images"
+              class="about-images lazy"
             />
           </div>
         </div>
         <!--fourth paragraph-->
         <div class="row mt-5 text-center justify-content-center">
           <p class="col-12">
-            High school seems like a blur to me, except for my last year. I had
-            just gotten out of a long term on-off relationship (which inspired a
-            LOT of music), so I was in a bit of a crisis to figure out my own
-            identity as I wasn’t living as an individual for the most of my
-            teenage years. I thought I needed to rebel and experiment as I was
-            starting to get in with the “cool kids” and mirroring their behavior
-            (which didn’t come naturally to me). However, when we were on our
-            senior trip close to the start of my final year I had a
-            breakthrough.
+            High school seems like a blur to me, except for my last year.
+            <br />
+            <br />
+            I had just gotten out of a long term on-off relationship (which
+            inspired a LOT of music), so I was in a bit of a crisis to figure
+            out my own identity as I wasn’t living as an individual for the most
+            of my teenage years.
+            <br />
+            <br />
+            I thought I needed to rebel and experiment as I was starting to get
+            in with the “cool kids” and mirroring their behavior (which didn’t
+            come naturally to me). However, when we were on our senior trip
+            close to the start of my final year I had a breakthrough.
           </p>
         </div>
         <!--fifth paragraph-->
@@ -180,17 +190,23 @@
             <img
               src="/images/clouds.png"
               alt="Tom Thomas posed looking up with a cloudy sunset sky background."
-              class="about-images"
+              class="about-images align-items-center lazy"
             />
           </div>
           <div class="col-xl-6 mt-5 text-end">
             <p>
               There was a musician playing for us at the resort who after his
-              set had offered up the stage to anyone willing and I don’t know
+              set ended offered up the stage to anyone willing and I don’t know
               what it was that pulled me up there (I had never performed in
               front of anyone at this point) but something inside me needed to
               go on that stage and in that moment, I found what came naturally
-              to me. This changed everything. My path, my mindset, and my peers.
+              to me.
+              <br />
+              <br />
+              This changed everything.
+              <br />
+              <br />
+              My path, my mindset, and my peers.
             </p>
           </div>
         </div>
@@ -213,7 +229,7 @@
             <img
               src="/images/window.png"
               alt="Tom Thomas looking out a window with red and blue lights shining on him."
-              class="about-images"
+              class="about-images lazy"
             />
           </div>
         </div>
@@ -233,63 +249,75 @@
       <div id="shows-section" class="container">
         <div class="row section-start">
           <h1 class="title" id="shows-title">
-            <span>Shows</span>
+            <span>SHOWS</span>
           </h1>
           <img
             src="/images/belting.png"
             alt="Tom Thomas belting in black and white."
             id="shows-title-image"
-            class="title-image mt-5"
+            class="title-image mt-5 lazy"
           />
         </div>
         <div class="row mt-5 text-center">
           <div class="col-4">
-            <span class="mini-highlighted">Upcoming</span>
+            <span class="mini-highlighted">UPCOMING</span>
           </div>
           <div class="col-4">
-            <span class="mini-highlighted">Location</span>
+            <span class="mini-highlighted">LOCATION</span>
           </div>
           <div class="col-4">
-            <span class="mini-highlighted">Tickets</span>
+            <span class="mini-highlighted">TICKETS</span>
           </div>
         </div>
         <!--row 1-->
         <div class="row mt-2 text-center align-items-center">
           <div class="col-4">
-            <h3>July 20, 2022</h3>
+            <h3>JULY 20, 2022</h3>
           </div>
           <div class="col-4">
-            <h3>Brantford Patio</h3>
+            <h3>
+              BRANTFORD
+              <br />
+              123 FAKE ST
+            </h3>
           </div>
           <div class="col-4">
             <!--CHANGE TO TICKET LINK-->
-            <a href="#" class="btn btn-primary-outline disabled">purchase</a>
+            <a href="#" class="btn btn-primary-outline disabled">BUY</a>
           </div>
         </div>
         <!--row 2-->
         <div class="row mt-2 text-center align-items-center">
           <div class="col-4">
-            <h3>July 21, 2022</h3>
+            <h3>JULY 21, 2022</h3>
           </div>
           <div class="col-4">
-            <h3>London Bar</h3>
+            <h3>
+              LONDON
+              <br />
+              BUDWEISER STADIUM
+            </h3>
           </div>
           <div class="col-4">
             <!--CHANGE TO TICKET LINK-->
-            <a href="#" class="btn btn-primary-outline disabled">purchase</a>
+            <a href="#" class="btn btn-primary-outline disabled">BUY</a>
           </div>
         </div>
         <!--row 3-->
         <div class="row mt-2 text-center align-items-center">
           <div class="col-4">
-            <h3>July 22, 2022</h3>
+            <h3>JULY 22, 2022</h3>
           </div>
           <div class="col-4">
-            <h3>Toronto</h3>
+            <h3>
+              TORONTO
+              <br />
+              RODGERS STADIUM
+            </h3>
           </div>
           <div class="col-4">
             <!--CHANGE TO TICKET LINK-->
-            <a href="#" class="btn btn-primary-outline disabled">purchase</a>
+            <a href="#" class="btn btn-primary-outline disabled">BUY</a>
           </div>
         </div>
       </div>
@@ -297,13 +325,13 @@
       <div id="music-section" class="container">
         <div class="row section-start">
           <h1 class="title" id="music-title">
-            <span>Music</span>
+            <span>MUSIC</span>
           </h1>
           <img
             src="/images/window.png"
             alt="Tom Thomas in a window with red and blue lights shining on him."
             id="music-title-image"
-            class="title-image mt-5"
+            class="title-image mt-5 lazy"
           />
         </div>
         <!--soul in music-->
@@ -314,20 +342,21 @@
             here upon each release.
           </p>
         </div>
-        <!--album-->
+        <!--albums/singles-->
+        <!--SEIZE-->
         <div class="container mt-5">
           <div class="row align-items-center">
             <div class="col-4">
               <img
                 src="/images/seize-album.png"
                 alt="Seize album cover art."
-                class="album"
+                class="album lazy"
               />
             </div>
             <div class="col-md-8 album-info text-center">
               <div class="row justify-content-center text-center">
                 <div class="col-lg justify-content-center">
-                  <span class="mini-highlighted">Seize</span>
+                  <span class="mini-highlighted">SEIZE</span>
                 </div>
                 <div class="col-lg justify-content-center">
                   <a
@@ -387,18 +416,71 @@
             has to say, or what struggles we meet along the way.
           </p>
         </div>
+        <!--ONLY-->
+        <div class="container mt-5">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img
+                src="/images/only-album.png"
+                alt="Only album cover art."
+                class="album lazy"
+              />
+            </div>
+            <div class="col-md-8 album-info text-center">
+              <div class="row justify-content-center text-center">
+                <div class="col-lg justify-content-center">
+                  <span class="mini-highlighted">ONLY</span>
+                </div>
+                <div class="col-lg justify-content-center">
+                  <a
+                    href="https://open.spotify.com/album/6WZsxWNaM4gyQyXFmUELkZ?highlight=spotify:track:25mfbJQkLtsvZWoMBDXfre"
+                    target="_blank"
+                  >
+                    <span><i class="fa-brands fa-spotify link-logo"></i></span>
+                    >1000
+                  </a>
+                </div>
+                <div class="col-lg justify-content-center">
+                  <a
+                    href="https://music.apple.com/us/album/seize-single/1584834064?uo=4"
+                    target="_blank"
+                  >
+                    <span><i class="fa-solid fa-music link-logo"></i></span>50
+                  </a>
+                </div>
+                <div class="col-lg justify-content-center">
+                  <a
+                    href="https://music.apple.com/us/album/seize-single/1584834064?uo=4"
+                    target="_blank"
+                  >
+                    <span><i class="fa-brands fa-itunes link-logo"></i></span>25
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Only info-->
+        <div class="row mt-5">
+          <p>
+            Information about why Only was written will be placed here.
+            <br />
+            <br />
+            Basically maybe Tom Thomas fell in love.
+          </p>
+        </div>
       </div>
       <!-- STREAMS SECTION -->
       <div id="streams-section" class="container">
         <div class="row mt-5 section-start">
           <h1 class="title" id="stream-title">
-            <span>Streams</span>
+            <span>STREAMS</span>
           </h1>
           <img
             src="/images/streaming.png"
             alt="Tom Thomas streaming from home."
             id="streams-title-image"
-            class="title-image mt-5"
+            class="title-image mt-5 lazy"
           />
         </div>
         <div class="row mt-5 text-center">
@@ -422,12 +504,12 @@
         </div>
         <!--livestream schedule-->
         <div id="livestreams-title" class="row mt-5 text-center">
-          <h2><span class="mini-highlighted">Livestreams</span></h2>
+          <h2><span class="mini-highlighted">LIVESTREAMS</span></h2>
         </div>
         <div class="row align-items-center">
           <div id="twitch-schedule" class="col-6">
             <div class="col-12 mt-5">
-              <h2><span class="mini-highlighted">Twitch</span></h2>
+              <h2><span class="mini-highlighted">TWITCH</span></h2>
             </div>
             <div class="col-12 mt-5"><h1>Sunday: 1:00PM-4:00PM</h1></div>
             <div class="col-12"><p>Request Show</p></div>
@@ -447,13 +529,13 @@
             <img
               src="/images/guitar-solo.png"
               alt="Tom Thomas guitar-solo"
-              class="img-fluid position-absolute guitar-solo"
+              class="img-fluid position-absolute guitar-solo lazy"
             />
           </div>
         </div>
         <!--highlights-->
         <div class="row mt-5 text-center">
-          <h2><span class="mini-highlighted">Highlights</span></h2>
+          <h2><span class="mini-highlighted">HIGHLIGHTS</span></h2>
         </div>
         <!--highlight row 1-->
         <div class="row mt-5">
@@ -464,10 +546,10 @@
               <img
                 src="/images/logo.PNG"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Freestyle</h4>
+            <h4 class="highlight-title">FREESTYLE</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -476,10 +558,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Numb</h4>
+            <h4 class="highlight-title">NUMB</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -488,10 +570,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Potatoes</h4>
+            <h4 class="highlight-title">POTATOES</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -500,10 +582,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Potatoes Loop Building</h4>
+            <h4 class="highlight-title">POTATOES LOOP BUILDING</h4>
           </div>
         </div>
         <!--highlight row 2-->
@@ -515,10 +597,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">SAD! Loop</h4>
+            <h4 class="highlight-title">SAD! LOOP</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -527,10 +609,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Best Part</h4>
+            <h4 class="highlight-title">BEST PART</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -539,10 +621,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Roxanne</h4>
+            <h4 class="highlight-title">ROXANNE</h4>
           </div>
           <div class="col-sm-3 highlight-container">
             <a
@@ -551,10 +633,10 @@
               <img
                 src="/images/logo.png"
                 alt="Tom Thomas Logo"
-                class="mini-logo"
+                class="mini-logo lazy"
               />
             </a>
-            <h4 class="highlight-title">Burp</h4>
+            <h4 class="highlight-title">BURP</h4>
           </div>
         </div>
       </div>
@@ -562,30 +644,30 @@
       <div id="shop-section" class="container">
         <div class="row mt-5 section-start">
           <h1 class="title" id="shop-title">
-            <span>Shop</span>
+            <span>SHOP</span>
           </h1>
           <img
             src="/images/classy.png"
             alt="Tom Thomas looking fashionable."
             id="shop-title-image"
-            class="title-image mt-5 mb-5"
+            class="title-image mt-5 mb-5 lazy"
           />
         </div>
         <div class="row mt-5 mb-5 text-center">
-          <h2><span class="mini-highlighted">Coming Soon</span></h2>
+          <h2><span class="mini-highlighted">COMING SOON</span></h2>
         </div>
       </div>
       <!--CONTACT SECTION-->
       <div id="contact-section" class="container">
         <div class="row mt-5 section-start">
           <h1 class="title" id="contact-title">
-            <span>Contact</span>
+            <span>CONTACT</span>
           </h1>
           <img
             src="/images/patio.png"
             alt="Tom Thomas looking fashionable."
             id="contact-title-image"
-            class="title-image mt-5"
+            class="title-image mt-5 lazy"
           />
         </div>
         <div class="row mt-5">
@@ -639,7 +721,7 @@
             ></a>
           </p>
         </li>
-          <li class="col">
+        <li class="col">
           <p>
             <a
               href="https://music.apple.com/us/album/seize-single/1584834064?uo=4"
@@ -650,7 +732,9 @@
         </li>
         <li class="col">
           <p>
-            <a href="https://www.instagram.com/tomthomastunes/?hl=en" target="_blank"
+            <a
+              href="https://www.instagram.com/tomthomastunes/?hl=en"
+              target="_blank"
               ><span><i class="fa-brands fa-instagram link-logo"></i></span
             ></a>
           </p>
